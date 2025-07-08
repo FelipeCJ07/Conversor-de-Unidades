@@ -1,4 +1,4 @@
-# 🌐 Conversor Universal - Modo Claro/Escuro
+# 🌐 Conversor Universal 
 
 Um conversor moderno e interativo de unidades com suporte a múltiplas categorias (distância, peso, temperatura, etc). Agora com botão para alternar entre **modo claro e escuro**. 🎨🌙
 
