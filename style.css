@@ -1,0 +1,71 @@
+
+:root {
+  --primary: #5e35b1;
+  --primary-light: #7e57c2;
+  --primary-dark: #4527a0;
+  --secondary: #26c6da;
+  --accent: #ff7043;
+  --light: #f8f9fa;
+  --dark: #263238;
+  --gray: #78909c;
+  --border: #e0e0e0;
+  --card-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+body {
+  transition: var(--transition);
+}
+
+body.dark-mode {
+  background: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .converter-app,
+body.dark-mode .conversion-section,
+body.dark-mode .app-footer,
+body.dark-mode .history-item {
+  background: #1e1e1e;
+  color: #e0e0e0;
+}
+
+body.dark-mode .app-header {
+  background: linear-gradient(to right, #311b92, #1a237e);
+}
+
+body.dark-mode .category-btn {
+  background: #333;
+  color: #eee;
+}
+
+body.dark-mode .category-btn.active {
+  background: var(--primary-dark);
+}
+
+body.dark-mode .conversion-result {
+  background: linear-gradient(135deg, #6a1b9a, #4a148c);
+}
+
+body.dark-mode .clear-history:hover {
+  color: #ff5252;
+}
+
+.dark-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+
+.dark-toggle:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
