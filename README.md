@@ -1,43 +1,71 @@
-# 🌐 Conversor Universal 
+# 🌐 Conversor Universal
 
-Um conversor moderno e interativo de unidades com suporte a múltiplas categorias (distância, peso, temperatura, etc). Agora com botão para alternar entre **modo claro e escuro**. 🎨🌙
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/docs/Web/JavaScript)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-## 🖥️ Tecnologias Usadas
+> Conversor de unidades **moderno e interativo**, feito em HTML, CSS e JavaScript puro
+> (sem frameworks). Converte em **tempo real** entre 7 categorias, guarda o **histórico**
+> localmente e tem **modo claro/escuro**.
 
-- HTML5
-- CSS3 (design moderno com variáveis e responsividade)
-- JavaScript (conversões, histórico local e interação)
-- [Font Awesome 6](https://fontawesome.com)
+## 🖼️ Demo
 
-## 📸 Funcionalidades
+![Conversor Universal](docs/screenshot.png)
 
-- Conversão de unidades em tempo real
-- Histórico local persistente
-- Interface responsiva com visual moderno
-- Modo Claro/Escuro com apenas 1 clique
+## ✨ Funcionalidades
 
-## 🚀 Como Rodar Localmente
+- 🔄 **Conversão em tempo real** — o resultado atualiza enquanto você digita
+- 📂 **7 categorias** — Comprimento, Peso, Temperatura, Área, Volume, Velocidade e Dados
+- ⇄ **Botão de inverter** unidades (de ↔ para)
+- 🕘 **Histórico local** persistente via `localStorage`
+- 🌙 **Modo claro/escuro** com 1 clique
+- 📱 **Responsivo** — funciona bem em telas pequenas
 
-1. Clone este repositório:
+## 🛠️ Tecnologias
+
+- **HTML5**
+- **CSS3** (variáveis, gradientes, responsividade)
+- **JavaScript** (lógica de conversão, histórico e interação)
+- [Font Awesome 6](https://fontawesome.com) para os ícones
+
+## 🚀 Como rodar
+
+Não precisa de build nem dependências — é só abrir o arquivo:
 
 ```bash
-git clone https://github.com/seu-usuario/conversor-universal.git
-cd conversor-universal
+# Windows
+start index.html
+# macOS
+open index.html
+# Linux
+xdg-open index.html
 ```
 
-2. Abra o arquivo `index.html` no navegador:
+> Dica: para evitar qualquer restrição do navegador com arquivos locais, você também pode
+> servir a pasta com `python -m http.server` e acessar `http://localhost:8000`.
 
-```bash
-start index.html  # (Windows)
-open index.html   # (macOS)
+## 🔢 Categorias e unidades
+
+| Categoria | Unidades |
+|-----------|----------|
+| Comprimento | mm, cm, m, km, polegada, pé, jarda, milha |
+| Peso | mg, g, kg, tonelada, onça, libra |
+| Temperatura | Celsius, Fahrenheit, Kelvin |
+| Área | cm², m², hectare, km², pé², acre |
+| Volume | ml, l, m³, galão |
+| Velocidade | m/s, km/h, mph, nó |
+| Dados | B, KB, MB, GB, TB |
+
+## 📂 Estrutura
+
 ```
-
-
-
-## 🔄 Alternância de Tema
-
-Clique no botão “Alternar Modo Escuro” no canto superior direito para alternar o visual da aplicação dinamicamente.
+Conversor-de-Unidades/
+├─ index.html   # estrutura da interface
+├─ style.css    # estilos (claro/escuro, responsivo)
+└─ script.js    # categorias, conversões e histórico
+```
 
 ## 📄 Licença
 
-MIT License.
+Distribuído sob a licença **MIT**. Veja [LICENSE](LICENSE).
